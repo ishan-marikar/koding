@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"sort"
 
 	"koding/kites/kloud/stack"
+	kloudstack "koding/kites/kloud/stack"
 	"koding/klientctl/kloud"
 	"koding/klientctl/kloud/credential"
 
@@ -55,7 +55,7 @@ func (c *Client) Create(opts *CreateOptions) (*stack.ImportResponse, error) {
 		return nil, fmt.Errorf("stack: template encoding error: %s", err)
 	}
 
-	providers, err := c.readProviders(data)
+	providers, err := kloudstack.ReadProviders(data)
 	if err != nil {
 		return nil, fmt.Errorf("stack: unable to read providers: %s", err)
 	}
@@ -142,26 +142,6 @@ func (c *Client) jsonReencode(data []byte) ([]byte, error) {
 	}
 
 	return nil, errors.New("unknown encoding")
-}
-
-func (c *Client) readProviders(data []byte) ([]string, error) {
-	var v struct {
-		Provider map[string]struct{} `json:"provider"`
-	}
-
-	if err := json.Unmarshal(data, &v); err != nil {
-		return nil, err
-	}
-
-	providers := make([]string, len(v.Provider))
-
-	for p := range v.Provider {
-		providers = append(providers, p)
-	}
-
-	sort.Strings(providers)
-
-	return providers, nil
 }
 
 // Create

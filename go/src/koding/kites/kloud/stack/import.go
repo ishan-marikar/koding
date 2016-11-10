@@ -66,6 +66,27 @@ func (k *Kloud) Import(r *kite.Request) (interface{}, error) {
 		req.Title = fmt.Sprintf("%s's Stack", strings.ToTitle(r.Username))
 	}
 
+	// TODO(rjeczalik): Refactor stack/provider/apply to make it possible to build
+	// multiple stacks at once.
+	if req.Provider == "" {
+		providers, err := ReadProviders(req.Template)
+		if err != nil {
+			return nil, err
+		}
+
+		for _, provider := range providers {
+			if _, ok := k.providers[provider]; ok {
+				req.Provider = provider
+				break
+			}
+		}
+	}
+
+	c, ok := req.Credentials[req.Provider]
+	if !ok || len(c) == 0 {
+		return nil, fmt.Errorf("no credential for %q provider", req.Provider)
+	}
+
 	p, ok := k.providers[req.Provider]
 	if !ok {
 		return nil, NewError(ErrProviderNotFound)
