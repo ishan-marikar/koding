@@ -13,12 +13,14 @@
   "scripts": {
     "preinstall": "./.npm-preinstall.sh",
     "install": "./.npm-install.sh",
-    "postinstall": "./.npm-postinstall.sh"
+    "postinstall": "./.npm-postinstall.sh",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "amqp": "0.2.4",
-    "analytics-node": "1.2.2",
-    "appmetrics": "1.0.13",
+    "analytics-node": "2.1.1",
+    "appmetrics": "1.1.0",
     "async": "1.5.2",
     "aws-sdk": "2.1.4",
     "bluebird": "1.0.8",
@@ -48,14 +50,14 @@
     "embedly": "1.0.4",
     "es": "0.4.x",
     "eventemitter2": "1.0.3",
-    "express": "4.9.5",
+    "express": "4.16.0",
     "express-session": "1.10.4",
     "faker": "1.1.0",
     "geoip-lite": "1.1.6",
     "git-rev": "0.2.1",
     "github": "0.2.4",
     "gitlab": "1.7.0",
-    "googleapis": "1.1.5",
+    "googleapis": "12.1.0",
     "gulp": "3.8.11",
     "hat": "0.0.3",
     "helmet": "0.2.4",
@@ -71,7 +73,7 @@
     "lodash": "3.10.1",
     "lodash.clonedeep": "3.0.2",
     "marked": "0.3.1",
-    "mime": "1.2.x",
+    "mime": "1.4.1",
     "minimist": "0.0.8",
     "mkdirp": "0.3.2",
     "mongodb": "1.4.18",
@@ -80,7 +82,7 @@
     "node-sockjs-client": "1.0.7",
     "node-syntaxhighlighter": "0.8.1",
     "node-uuid": "1.4.1",
-    "nodemailer": "0.5.15",
+    "nodemailer": "1.0.0",
     "oauth": "0.9.10",
     "on-finished": "2.3.0",
     "opentok": "2.2.5",
@@ -90,7 +92,7 @@
     "ratelimit.js": "1.7.0",
     "read": "1.0.5",
     "redis": "0.12.1",
-    "request": "2.54.0",
+    "request": "2.81.0",
     "sendmail": "0.2.1",
     "shortid": "2.2.2",
     "simple-recaptcha": "0.0.3",
@@ -111,7 +113,8 @@
     "winston": "2.1.1",
     "winston-papertrail": "1.0.2",
     "xml2js": "0.2.6",
-    "yield-siftscience": "0.0.8"
+    "yield-siftscience": "0.0.8",
+    "snyk": "^1.85.0"
   },
   "devDependencies": {
     "chai": "2.2.0",
@@ -124,5 +127,6 @@
   "optionalDependencies": {},
   "engines": {
     "node": "0.10.20"
-  }
+  },
+  "snyk": true
 }
