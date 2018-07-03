@@ -13,7 +13,9 @@
   "scripts": {
     "preinstall": "./.npm-preinstall.sh",
     "install": "./.npm-install.sh",
-    "postinstall": "./.npm-postinstall.sh"
+    "postinstall": "./.npm-postinstall.sh",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "amqp": "0.2.4",
@@ -55,7 +57,7 @@
     "git-rev": "0.2.1",
     "github": "0.2.4",
     "gitlab": "1.7.0",
-    "googleapis": "1.1.5",
+    "googleapis": "3.0.0",
     "gulp": "3.8.11",
     "hat": "0.0.3",
     "helmet": "0.2.4",
@@ -68,7 +70,7 @@
     "jsonwebtoken": "5.0.1",
     "kite.js": "0.3.9",
     "konstraints": "0.1.5",
-    "lodash": "3.10.1",
+    "lodash": "4.17.5",
     "lodash.clonedeep": "3.0.2",
     "marked": "0.3.1",
     "mime": "1.2.x",
@@ -90,7 +92,7 @@
     "ratelimit.js": "1.7.0",
     "read": "1.0.5",
     "redis": "0.12.1",
-    "request": "2.54.0",
+    "request": "2.66.0",
     "sendmail": "0.2.1",
     "shortid": "2.2.2",
     "simple-recaptcha": "0.0.3",
@@ -111,7 +113,8 @@
     "winston": "2.1.1",
     "winston-papertrail": "1.0.2",
     "xml2js": "0.2.6",
-    "yield-siftscience": "0.0.8"
+    "yield-siftscience": "0.1.0",
+    "snyk": "^1.88.0"
   },
   "devDependencies": {
     "chai": "2.2.0",
@@ -124,5 +127,6 @@
   "optionalDependencies": {},
   "engines": {
     "node": "0.10.20"
-  }
+  },
+  "snyk": true
 }
