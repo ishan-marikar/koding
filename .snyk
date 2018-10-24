@@ -1,0 +1,31 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.12.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:minimatch:20160620':
+    - kite.js > gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2018-10-24T08:26:25.674Z'
+    - codo > nib > stylus > glob > minimatch:
+        patched: '2018-10-24T08:26:25.674Z'
+    - coffee-unused > jasmine-node > gaze > fileset > minimatch:
+        patched: '2018-10-24T08:26:25.674Z'
+    - coffee-unused > jasmine-node > gaze > minimatch:
+        patched: '2018-10-24T08:26:25.674Z'
+    - gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2018-10-24T08:26:25.674Z'
+    - gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2018-10-24T08:26:25.674Z'
+    - coffee-unused > jasmine-node > gaze > fileset > glob > minimatch:
+        patched: '2018-10-24T08:26:25.674Z'
+    - kite.js > gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2018-10-24T08:26:25.674Z'
+    - gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2018-10-24T08:26:25.674Z'
+    - kite.js > gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2018-10-24T08:26:25.674Z'
+  'npm:tunnel-agent:20170305':
+    - stack-docs-search > npm > request > tunnel-agent:
+        patched: '2018-10-24T08:26:25.674Z'
+    - appmetrics > tap > codecov.io > request > tunnel-agent:
+        patched: '2018-10-24T08:26:25.674Z'
