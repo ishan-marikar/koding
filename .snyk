@@ -1,0 +1,128 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hawk:20160119':
+    - appmetrics > tap > codecov.io > request > hawk:
+        patched: '2019-04-20T05:29:13.137Z'
+  'npm:hoek:20180212':
+    - stack-docs-search > npm > request > hawk > hoek:
+        patched: '2019-04-20T05:29:13.137Z'
+    - stack-docs-search > npm > request > hawk > sntp > hoek:
+        patched: '2019-04-20T05:29:13.137Z'
+    - stack-docs-search > npm > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-04-20T05:29:13.137Z'
+    - stack-docs-search > npm > request > hawk > boom > hoek:
+        patched: '2019-04-20T05:29:13.137Z'
+  'npm:http-signature:20150122':
+    - appmetrics > tap > codecov.io > request > http-signature:
+        patched: '2019-04-20T05:29:13.137Z'
+  'npm:mime:20170907':
+    - dns > tomahawk > winston > request > form-data > mime:
+        patched: '2019-04-20T05:29:13.137Z'
+    - codo > winston > request > mime:
+        patched: '2019-04-20T05:29:13.137Z'
+    - dns > winston > request > mime:
+        patched: '2019-04-20T05:29:13.137Z'
+    - embedly > superagent > form-data > mime:
+        patched: '2019-04-20T05:29:13.137Z'
+    - papertrail > superagent > form-data > mime:
+        patched: '2019-04-20T05:29:13.137Z'
+    - yield-siftscience > request > form-data > mime:
+        patched: '2019-04-20T05:29:13.137Z'
+    - dns > tomahawk > winston > request > mime:
+        patched: '2019-04-20T05:29:13.137Z'
+    - dns > winston > request > form-data > mime:
+        patched: '2019-04-20T05:29:13.137Z'
+    - codo > winston > request > form-data > mime:
+        patched: '2019-04-20T05:29:13.137Z'
+    - yield-siftscience > request > mime:
+        patched: '2019-04-20T05:29:13.137Z'
+    - appmetrics > tap > codecov.io > request > form-data > mime:
+        patched: '2019-04-20T05:29:13.137Z'
+    - papertrail > superagent > mime:
+        patched: '2019-04-20T05:29:13.137Z'
+    - dns > tomahawk > express > serve-static > send > mime:
+        patched: '2019-04-20T05:29:13.137Z'
+    - dns > tomahawk > express > send > mime:
+        patched: '2019-04-20T05:29:13.137Z'
+  'npm:minimatch:20160620':
+    - codo > nib > stylus > glob > minimatch:
+        patched: '2019-04-20T05:29:13.137Z'
+    - coffee-unused > jasmine-node > gaze > fileset > minimatch:
+        patched: '2019-04-20T05:29:13.137Z'
+    - coffee-unused > jasmine-node > gaze > minimatch:
+        patched: '2019-04-20T05:29:13.137Z'
+    - gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2019-04-20T05:29:13.137Z'
+    - coffee-unused > jasmine-node > gaze > fileset > glob > minimatch:
+        patched: '2019-04-20T05:29:13.137Z'
+    - kite.js > gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2019-04-20T05:29:13.137Z'
+    - kite.js > gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2019-04-20T05:29:13.137Z'
+    - gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2019-04-20T05:29:13.137Z'
+    - kite.js > gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2019-04-20T05:29:13.137Z'
+    - gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2019-04-20T05:29:13.137Z'
+  'npm:ms:20151024':
+    - dns > tomahawk > connect > debug > ms:
+        patched: '2019-04-20T05:29:13.137Z'
+    - dns > tomahawk > express > debug > ms:
+        patched: '2019-04-20T05:29:13.137Z'
+    - dns > tomahawk > express > send > ms:
+        patched: '2019-04-20T05:29:13.137Z'
+    - dns > tomahawk > express > finalhandler > debug > ms:
+        patched: '2019-04-20T05:29:13.137Z'
+    - dns > tomahawk > express > serve-static > send > ms:
+        patched: '2019-04-20T05:29:13.137Z'
+    - dns > tomahawk > connect > finalhandler > debug > ms:
+        patched: '2019-04-20T05:29:13.137Z'
+    - dns > tomahawk > express > send > debug > ms:
+        patched: '2019-04-20T05:29:13.137Z'
+    - dns > tomahawk > express > serve-static > send > debug > ms:
+        patched: '2019-04-20T05:29:13.137Z'
+  'npm:negotiator:20160616':
+    - dns > tomahawk > errorhandler > accepts > negotiator:
+        patched: '2019-04-20T05:29:13.137Z'
+    - dns > tomahawk > express > accepts > negotiator:
+        patched: '2019-04-20T05:29:13.137Z'
+  'npm:qs:20140806-1':
+    - dns > winston > request > qs:
+        patched: '2019-04-20T05:29:13.137Z'
+    - codo > winston > request > qs:
+        patched: '2019-04-20T05:29:13.137Z'
+    - dns > tomahawk > express > qs:
+        patched: '2019-04-20T05:29:13.137Z'
+    - dns > tomahawk > body-parser > qs:
+        patched: '2019-04-20T05:29:13.137Z'
+    - papertrail > superagent > qs:
+        patched: '2019-04-20T05:29:13.137Z'
+    - dns > tomahawk > winston > request > qs:
+        patched: '2019-04-20T05:29:13.137Z'
+  'npm:request:20160119':
+    - appmetrics > tap > codecov.io > request:
+        patched: '2019-04-20T05:29:13.137Z'
+    - codo > winston > request:
+        patched: '2019-04-20T05:29:13.137Z'
+    - dns > winston > request:
+        patched: '2019-04-20T05:29:13.137Z'
+    - dns > tomahawk > winston > request:
+        patched: '2019-04-20T05:29:13.137Z'
+  'npm:tunnel-agent:20170305':
+    - stack-docs-search > npm > request > tunnel-agent:
+        patched: '2019-04-20T05:29:13.137Z'
+    - appmetrics > tap > codecov.io > request > tunnel-agent:
+        patched: '2019-04-20T05:29:13.137Z'
+  'npm:ws:20160920':
+    - dns > tomahawk > socket.io > engine.io > ws:
+        patched: '2019-04-20T05:29:13.137Z'
+    - dns > tomahawk > socket.io > socket.io-client > engine.io-client > ws:
+        patched: '2019-04-20T05:29:13.137Z'
+    - node-sockjs-client > ws:
+        patched: '2019-04-20T05:29:13.137Z'
+    - kite.js > node-sockjs-client > ws:
+        patched: '2019-04-20T05:29:13.137Z'
