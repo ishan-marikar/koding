@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "amqp": "0.2.4",
-    "analytics-node": "1.2.2",
+    "analytics-node": "2.1.1",
     "appmetrics": "1.0.13",
     "async": "1.5.2",
     "aws-sdk": "2.1.4",
@@ -45,7 +45,7 @@
     "disposable-email-domains": "1.0.4",
     "dns": "0.2.2",
     "dogapi": "0.1.8",
-    "embedly": "1.0.4",
+    "embedly": "2.1.1",
     "es": "0.4.x",
     "eventemitter2": "1.0.3",
     "express": "4.9.5",
