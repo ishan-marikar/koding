@@ -13,16 +13,18 @@
   "scripts": {
     "preinstall": "./.npm-preinstall.sh",
     "install": "./.npm-install.sh",
-    "postinstall": "./.npm-postinstall.sh"
+    "postinstall": "./.npm-postinstall.sh",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "amqp": "0.2.4",
-    "analytics-node": "1.2.2",
+    "analytics-node": "2.1.1",
     "appmetrics": "1.0.13",
     "async": "1.5.2",
     "aws-sdk": "2.1.4",
     "bluebird": "1.0.8",
-    "body-parser": "1.12.2",
+    "body-parser": "1.19.2",
     "busboy": "0.2.13",
     "cache-manager": "1.2.2",
     "cli-table": "0.3.1",
@@ -45,7 +47,7 @@
     "disposable-email-domains": "1.0.4",
     "dns": "0.2.2",
     "dogapi": "0.1.8",
-    "embedly": "1.0.4",
+    "embedly": "2.1.1",
     "es": "0.4.x",
     "eventemitter2": "1.0.3",
     "express": "4.9.5",
@@ -111,7 +113,8 @@
     "winston": "2.1.1",
     "winston-papertrail": "1.0.2",
     "xml2js": "0.2.6",
-    "yield-siftscience": "0.0.8"
+    "yield-siftscience": "0.0.8",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "chai": "2.2.0",
@@ -124,5 +127,6 @@
   "optionalDependencies": {},
   "engines": {
     "node": "0.10.20"
-  }
+  },
+  "snyk": true
 }
