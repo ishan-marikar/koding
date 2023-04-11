@@ -13,12 +13,14 @@
   "scripts": {
     "preinstall": "./.npm-preinstall.sh",
     "install": "./.npm-install.sh",
-    "postinstall": "./.npm-postinstall.sh"
+    "postinstall": "./.npm-postinstall.sh",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
-    "amqp": "0.2.4",
-    "analytics-node": "1.2.2",
-    "appmetrics": "1.0.13",
+    "amqp": "0.2.6",
+    "analytics-node": "2.1.1",
+    "appmetrics": "1.1.0",
     "async": "1.5.2",
     "aws-sdk": "2.1.4",
     "bluebird": "1.0.8",
@@ -55,7 +57,7 @@
     "git-rev": "0.2.1",
     "github": "0.2.4",
     "gitlab": "1.7.0",
-    "googleapis": "1.1.5",
+    "googleapis": "12.1.0",
     "gulp": "3.8.11",
     "hat": "0.0.3",
     "helmet": "0.2.4",
@@ -80,10 +82,10 @@
     "node-sockjs-client": "1.0.7",
     "node-syntaxhighlighter": "0.8.1",
     "node-uuid": "1.4.1",
-    "nodemailer": "0.5.15",
+    "nodemailer": "1.0.0",
     "oauth": "0.9.10",
     "on-finished": "2.3.0",
-    "opentok": "2.2.5",
+    "opentok": "2.4.0",
     "optimist": "0.3.1",
     "papertrail": "1.0.2",
     "progress": "0.0.4",
@@ -111,7 +113,8 @@
     "winston": "2.1.1",
     "winston-papertrail": "1.0.2",
     "xml2js": "0.2.6",
-    "yield-siftscience": "0.0.8"
+    "yield-siftscience": "0.0.8",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "chai": "2.2.0",
@@ -124,5 +127,6 @@
   "optionalDependencies": {},
   "engines": {
     "node": "0.10.20"
-  }
+  },
+  "snyk": true
 }
