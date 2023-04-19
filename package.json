@@ -13,7 +13,9 @@
   "scripts": {
     "preinstall": "./.npm-preinstall.sh",
     "install": "./.npm-install.sh",
-    "postinstall": "./.npm-postinstall.sh"
+    "postinstall": "./.npm-postinstall.sh",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "amqp": "0.2.4",
@@ -111,7 +113,8 @@
     "winston": "2.1.1",
     "winston-papertrail": "1.0.2",
     "xml2js": "0.2.6",
-    "yield-siftscience": "0.0.8"
+    "yield-siftscience": "0.0.8",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "chai": "2.2.0",
@@ -124,5 +127,6 @@
   "optionalDependencies": {},
   "engines": {
     "node": "0.10.20"
-  }
+  },
+  "snyk": true
 }
