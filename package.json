@@ -48,7 +48,7 @@
     "embedly": "1.0.4",
     "es": "0.4.x",
     "eventemitter2": "1.0.3",
-    "express": "4.9.5",
+    "express": "4.19.2",
     "express-session": "1.10.4",
     "faker": "1.1.0",
     "geoip-lite": "1.1.6",
